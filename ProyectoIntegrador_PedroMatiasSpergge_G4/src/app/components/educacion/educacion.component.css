@@ -1,0 +1,13 @@
+.row {
+    padding: 20px;
+}
+
+div {
+    background: rgb(39, 27, 27);
+    color: aliceblue;
+}
+
+h1,
+h3 {
+    display: inline;
+}
