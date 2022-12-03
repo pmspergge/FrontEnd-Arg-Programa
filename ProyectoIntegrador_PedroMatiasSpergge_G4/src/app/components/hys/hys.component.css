@@ -4,5 +4,11 @@
     background-attachment: fixed;
     background-size: cover;
     padding: 20px;
-    color: aliceblue;
+    color: #fefefe;
+}
+
+#title {
+    box-shadow: 2px -2px 15px #fac895;
+    border-radius: 10px;
+    margin-bottom: 50px;
 }

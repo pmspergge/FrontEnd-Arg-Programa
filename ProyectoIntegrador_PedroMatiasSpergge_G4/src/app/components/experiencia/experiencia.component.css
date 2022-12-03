@@ -7,10 +7,16 @@
 }
 
 div {
-    color: aliceblue;
+    color: #fefefe;
 }
 
 h1,
 h3 {
     display: inline;
+}
+
+#title {
+    box-shadow: 2px -2px 15px #fac895;
+    border-radius: 10px;
+    margin-bottom: 50px;
 }
