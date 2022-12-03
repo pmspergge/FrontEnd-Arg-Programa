@@ -16,11 +16,12 @@ div {
 @media (min-width: 576px) {
     #fotoDePerfil {
         position: absolute;
-        width: 15%;
+        width: 18%;
         border-radius: 100%;
         box-shadow: 3px 3px 13px #fac895;
-        left: 3%;
+        left: 2%;
         top: 500px;
+        height: 350px;
     }
 }
 
@@ -31,7 +32,7 @@ div {
         border-radius: 100%;
         box-shadow: 3px 3px 13px #fac895;
         left: 35%;
-        top: 500px;
+        top: 850px;
     }
 }
 
