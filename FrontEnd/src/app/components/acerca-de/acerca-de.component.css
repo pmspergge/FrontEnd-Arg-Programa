@@ -43,10 +43,21 @@ div {
 
 #nombre {
     font-weight: bold;
-    margin-top: 30%;
+    margin-top: 50%;
+    margin-left: 5%;
+}
+
+#developer {
+    margin-top: 10%;
+    margin-left: 5%;
 }
 
 #title {
+    font-weight: bolder;
+    color: #fac795a2;
+}
+
+#container {
     box-shadow: 2px -2px 15px #fac895;
     border-radius: 10px;
     margin-top: 50px;
