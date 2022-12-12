@@ -44,4 +44,5 @@ public class Rol {
         this.rolNombre = rolNombre;
     }
     
+    
 }
