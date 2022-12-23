@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/proyecto-integrador-pedro-matias-spergge-g4",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
