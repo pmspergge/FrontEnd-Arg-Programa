@@ -27,4 +27,9 @@
     border-radius: 10px;
     margin-bottom: 80px;
     margin-top: 50px;
+    font-weight: bolder;
+    color: transparent;
+    background: linear-gradient(74deg, rgba(198, 77, 2, 1) 31%, rgba(255, 128, 0, 1) 53%, rgba(110, 49, 11, 1) 77%);
+    background-clip: text;
+    -webkit-background-clip: text;
 }

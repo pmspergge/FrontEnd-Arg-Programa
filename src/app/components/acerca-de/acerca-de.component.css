@@ -54,7 +54,10 @@ div {
 
 #title {
     font-weight: bolder;
-    color: #fac795a2;
+    color: transparent;
+    background: linear-gradient(74deg, rgba(198, 77, 2, 1) 31%, rgba(255, 128, 0, 1) 53%, rgba(110, 49, 11, 1) 77%);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 #container {

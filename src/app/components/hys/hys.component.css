@@ -11,6 +11,11 @@
     box-shadow: 2px -2px 15px #fac895;
     border-radius: 10px;
     margin-bottom: 50px;
+    font-weight: bolder;
+    color: transparent;
+    background: linear-gradient(74deg, rgba(198, 77, 2, 1) 31%, rgba(255, 128, 0, 1) 53%, rgba(110, 49, 11, 1) 77%);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .circulo {
