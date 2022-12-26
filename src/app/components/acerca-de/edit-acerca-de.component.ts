@@ -46,6 +46,8 @@ export class EditAcercaDeComponent {
   }
 
   uploadImage($event: any) {
-    this.imageService.uploadImage($event, name);
+    const id = this.activatedRouter.snapshot.params['id'];
+    const name = 'perfil_' + id;
+    this.imageService.uploadImage({ $event, name });
   }
 }
