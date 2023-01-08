@@ -6,7 +6,6 @@ import {
   list,
   getDownloadURL,
 } from '@angular/fire/storage';
-import { async } from '@firebase/util';
 
 @Injectable({
   providedIn: 'root',

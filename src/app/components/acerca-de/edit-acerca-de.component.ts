@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, Route, Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { persona } from 'src/app/model/persona.model';
 import { ImageService } from 'src/app/service/image.service';
 import { PersonaService } from 'src/app/service/persona.service';
@@ -10,7 +10,7 @@ import { PersonaService } from 'src/app/service/persona.service';
   styleUrls: ['./edit-acerca-de.component.css'],
 })
 export class EditAcercaDeComponent {
-  persona: persona = null as any;
+  persona: persona = null!;
 
   constructor(
     private activatedRouter: ActivatedRoute,
