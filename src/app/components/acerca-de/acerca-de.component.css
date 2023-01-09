@@ -18,12 +18,12 @@ div {
 @media (min-width: 576px) {
     #fotoDePerfil {
         position: absolute;
-        width: 18%;
+        width: 13%;
         border-radius: 100%;
         box-shadow: 3px 3px 13px #fac895;
-        left: 2%;
-        top: 580px;
-        height: 250px;
+        left: 10%;
+        top: 590px;
+        height: 170px;
     }
 }
 
@@ -44,14 +44,14 @@ div {
 /*etiqueta nombre*/
 
 #nombre {
-    font-weight: bold;
-    margin-top: 50%;
-    margin-left: 5%;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 20%;
 }
 
 #developer {
-    margin-top: 10%;
-    margin-left: 5%;
+    font-size: 2vh;
+    margin-top: 5px;
 }
 
 #title {
@@ -65,5 +65,6 @@ div {
 #container {
     box-shadow: 2px -2px 15px #fac895;
     border-radius: 10px;
-    margin: 50px 0px 20px 0px;
+    margin: 20px 0px 20px 0px;
+    width: 64%;
 }

@@ -25,9 +25,9 @@ import { EditeducacionComponent } from './components/educacion/editeducacion.com
 import { EditSkillComponent } from './components/hys/edit-skill.component';
 import { NewSkillComponent } from './components/hys/new-skill.component';
 import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
-import { provideStorage,getStorage } from '@angular/fire/storage';
+import { provideStorage, getStorage } from '@angular/fire/storage';
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,15 +54,28 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgCircleProgressModule.forRoot({}),
+    NgCircleProgressModule.forRoot({
+      backgroundGradient: true,
+      backgroundColor: '#14185d',
+      backgroundGradientStopColor: '#030412',
+      backgroundPadding: -10,
+      radius: 60,
+      maxPercent: 100,
+      unitsColor: '#ffffff',
+      outerStrokeWidth: 10,
+      outerStrokeColor: '#c64d02',
+      innerStrokeWidth: 0,
+      titleColor: '#fdfcfc',
+      subtitleColor: '#ffffff',
+      showInnerStroke: false,
+      startFromZero: false,
+    }),
     HttpClientModule,
     FormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideStorage(() => getStorage())
+    provideStorage(() => getStorage()),
   ],
-  providers: [
-    interceptorProvider
-  ],
-  bootstrap: [AppComponent]
+  providers: [interceptorProvider],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
