@@ -3,6 +3,9 @@
         <img src={{persona.img}} class="img-fluid" id="fotoDePerfil">
         <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
         <p id="developer">Full Stack Developer Jr</p>
+        <button id="btn" type="button" class="btn btn-primary" routerLink="/editacercade/1" *ngIf="isLogged">
+            Editar persona
+        </button>
     </div>
 
 
@@ -13,9 +16,4 @@
         </span>
     </div>
 
-</div>
-<div>
-    <button type="button" class="btn btn-primary" routerLink="/editacercade/1" *ngIf="isLogged">
-        Editar persona
-    </button>
 </div>
