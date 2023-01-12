@@ -1,3 +1,10 @@
+nav {
+    background-color: #030418;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%2303041c' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%2303051f' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23030523' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23020627' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%2302062B' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -9,11 +16,11 @@
 }
 
 #logoAP {
-    width: 150px;
+    width: 200px;
 }
 
 img {
-    width: 50px;
+    width: 45px;
     margin: 0px 2px 0px 5px;
 }
 
@@ -21,7 +28,11 @@ img {
     border-width: 0.15rem;
 }
 
-/*--- Para la vista del celular ---*/
+.navbar-toggler .navbar-toggler-icon {
+    color: #fefefe;
+}
+
+/*--- Para la vista del celular ---
 @media(max-width:575px) {
     .container {
         flex-direction: column;
@@ -35,5 +46,62 @@ img {
 
     .redes img {
         margin: 0.2em;
+    }
+}*/
+
+/* MEDIA QUERIES */
+
+/* Mobile first, we start from the smallest viewport width */
+
+/* From 320px and up */
+@media (min-width: 320px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes img {
+        margin: 0.2em;
+    }
+}
+
+/* From 768px and up */
+@media (min-width: 768px) {
+    body {
+        background-color: green;
+    }
+}
+
+/* From 1024px and up */
+@media (min-width: 1024px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+/* From 1224px and up */
+@media (min-width: 1224px) {
+    body {
+        background-color: orange;
+    }
+}
+
+/* From 1824px and up */
+@media (min-width: 1824px) {
+    body {
+        background-color: aqua;
+    }
+}
+
+/*  max-width query */
+/* From 850px and up, until 950px  */
+@media (min-width: 850px) and (max-width: 950px) {
+    body {
+        background-color: purple;
     }
 }

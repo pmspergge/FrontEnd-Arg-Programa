@@ -1,4 +1,93 @@
-<div class="row">
+<body class="bg-secondary">
+
+    <!-- Inicio del menu -->
+
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <!-- icono o nombre -->
+
+            <a class="navbar-brand pe-none" href="#">
+                <img src="../../../assets/APLogo.png" alt="Logo Argentina Programa" id="logoAP">
+            </a>
+
+            <!-- boton del menu -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="bi bi-list-stars"></i></span>
+            </button>
+
+
+            <!-- elementos del menu colapsable -->
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <!--<hr class="d-md-none text-white-50">-->
+
+                <!-- enlaces redes sociales -->
+
+                <ul class="navbar-nav ms-auto flex-row flex-wrap text-light">
+
+                    <li class="nav-item col-6 col-md-auto p-3">
+                        <a class="nav-link active text-light" aria-current="page"
+                            href="https://www.linkedin.com/in/pedro-matias-spergge/"><i class="bi bi-linkedin"></i></a>
+                        <small class="d-md-none ms-2 text-light">Linkedin</small>
+
+                    </li>
+
+                    <li class="nav-item col-6 col-md-auto p-3">
+                        <a class="nav-link active text-light" aria-current="page" href="https://github.com/pmspergge"><i
+                                class="bi bi-github"></i></a>
+                        <small class="d-md-none ms-2 text-light">GitHub</small>
+
+                    </li>
+
+                    <li class="nav-item col-6 col-md-auto p-3">
+                        <a class="nav-link active text-light" aria-current="page" href="https://walink.co/6bc3c8"><i
+                                class="bi bi-whatsapp"></i></a>
+                        <small class="d-md-none ms-2 text-light">WhatsApp</small>
+
+                    </li>
+
+                    <li class="nav-item col-6 col-md-auto p-3">
+                        <a class="nav-link active text-light" aria-current="page"
+                            href="https://www.facebook.com/matiispergge"><i class="bi bi-facebook"></i></a>
+                        <small class="d-md-none ms-2 text-light">Facebook</small>
+
+                    </li>
+
+                </ul>
+
+                <!--boton Ingreso -->
+
+                <form class="d-flex">
+                    <!--<button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>-->
+                    <button type="submit" class="btn btn-outline-light d-md-inline-block" (click)="login()"
+                        *ngIf="!isLogged"><i class="bi bi-house-fill"></i> INGRESAR</button>
+                    <!--<button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR
+            SESION</button>-->
+                    <button type="submit" class="btn btn-outline-light d-md-inline-block" (click)="onLogOut()"
+                        *ngIf="isLogged"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-house-x-fill" viewBox="0 0 20 20">
+                            <path
+                                d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
+                            <path d="m8 3.293 4.712 4.712A4.5 4.5 0 0 0 8.758 15H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
+                            <path
+                                d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm-.646-4.854.646.647.646-.646a.5.5 0 0 1 .708.707l-.647.646.647.646a.5.5 0 0 1-.708.708l-.646-.647-.646.647a.5.5 0 0 1-.708-.707l.647-.647-.647-.646a.5.5 0 0 1 .708-.707Z" />
+                        </svg>CERRAR SESION</button>
+                    <!--<button class="btn btn-outline-warning d-none d-md-inline-block " type="submit">Informacion</button>-->
+                </form>
+
+
+            </div>
+
+        </div>
+    </nav>
+
+
+</body>
+
+<!--<div class="row">
     <div class="container">
         <div class="logo">
             <img src="../../../assets/APLogo.png" alt="Logo Argentina Programa" id="logoAP">
@@ -10,20 +99,8 @@
                     id="instagram" alt="instagram"></a>
             <a href="https://github.com/pmspergge" target="_blank"><img src="../../../assets/github.png" id="github"
                     alt="github"></a>
-            <!--<button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>-->
-            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged"><i
-                    class="bi bi-house-fill"></i> INGRESAR</button>
-            <!--<button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR
+            <!--<button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+<button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged"><i class="bi bi-house-fill"></i>
+    INGRESAR</button>
+<!--<button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR
                 SESION</button>-->
-            <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged"><svg
-                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    class="bi bi-house-x-fill" viewBox="0 0 20 20">
-                    <path
-                        d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
-                    <path d="m8 3.293 4.712 4.712A4.5 4.5 0 0 0 8.758 15H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
-                    <path
-                        d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm-.646-4.854.646.647.646-.646a.5.5 0 0 1 .708.707l-.647.646.647.646a.5.5 0 0 1-.708.708l-.646-.647-.646.647a.5.5 0 0 1-.708-.707l.647-.647-.647-.646a.5.5 0 0 1 .708-.707Z" />
-                </svg>CERRAR SESION</button>
-        </div>
-    </div>
-</div>
