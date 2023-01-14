@@ -9,5 +9,5 @@ export const environment = {
     messagingSenderId: '949464177643',
   },
   production: true,
-  URL: 'https://backendms-argprograma.onrender.com/',
+  URL: 'https://backend-arg-programa-production.up.railway.app/',
 };
