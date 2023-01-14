@@ -13,32 +13,25 @@
                             <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
                                 <div class="form-outline form-white mb-4">
                                     <input type="email" id="nombreUsuario" name="nombreUsuario"
-                                        class="form-control form-control-lg" [(ngModel)]="nombreUsuario" required />
-                                    <label class="form-label" for="nombreUsuario">Usuario</label>
+                                        class="form-control form-control-lg" [(ngModel)]="nombreUsuario"
+                                        placeholder="Nombre de Usuario" required />
                                 </div>
 
                                 <div class="form-outline form-white mb-4">
                                     <input type="password" id="password" name="password"
-                                        class="form-control form-control-lg" [(ngModel)]="password" required />
-                                    <label class="form-label" for="password">Password</label>
+                                        class="form-control form-control-lg" [(ngModel)]="password"
+                                        placeholder="Password" required />
                                 </div>
 
                                 <!--<p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Olvidaste tu
                                         password?</a>
-                                </p> -->
+                                </p> --->
 
-                                <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+                                <button class="btn btn-outline-light btn-lg px-5" type="submit">Iniciar Sesión</button>
 
+                                <br>
                             </form>
-
                         </div>
-
-                        <div>
-                            <p class="mb-0">No tienes una cuenta? <a href="#!" class="text-white-50 fw-bold">Crear
-                                    cuenta</a>
-                            </p>
-                        </div>
-
                     </div>
                 </div>
             </div>
