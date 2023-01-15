@@ -13,7 +13,7 @@ export const environment = {
     messagingSenderId: '949464177643',
   },
   production: false,
-  URL: 'https://backend-arg-programa-production.up.railway.app/',
+  URL: 'http://localhost:8080/',
 };
 
 /*
