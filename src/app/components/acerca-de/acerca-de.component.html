@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <img src={{persona.img}} class="img-fluid" id="fotoDePerfil">
-        <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
+        <img src="{{persona===null ? '' : persona.img}}" class="img-fluid" id="fotoDePerfil">
+        <p id="nombre">{{persona === null ? '' : persona.nombre}} {{persona === null ? '' : persona.apellido}}</p>
         <p id="developer">Full Stack Developer Jr</p>
         <button id="btn" type="button" class="btn btn-primary" routerLink="/editacercade/1" *ngIf="isLogged">
             Editar persona
@@ -12,7 +12,7 @@
     <div id="container" class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
         <span>
             <h1 id="title">Acerca de mí</h1>
-            <p>{{persona.descripcion}}</p>
+            <p>{{persona === null ? '' : persona.descripcion}}</p>
         </span>
     </div>
 
